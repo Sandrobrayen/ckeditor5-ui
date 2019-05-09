@@ -17,15 +17,19 @@ before_install:
 - sh -e /etc/init.d/xvfb start
 - npm i -g yarn
 install:
-- yarn add @ckeditor/ckeditor5-dev-tests
+- export CWD=$( pwd )
+- cd /tmp && git clone https://github.com/ckeditor/ckeditor5-dev.git && cd ckeditor5-dev && git checkout t/ckeditor5/1742 && cd $CWD
+- yarn add file:/tmp/ckeditor5-dev/packages/ckeditor5-dev-tests
 - ckeditor5-dev-tests-install-dependencies
 script:
 - ckeditor5-dev-tests-travis
 after_success:
-- ckeditor5-dev-tests-save-revision
+- echo "after_success:"
+#- ckeditor5-dev-tests-save-revision
 after_script:
-- export END_TIME=$( date +%s )
-- ckeditor5-dev-tests-notify-travis-status
+- echo "after_script:"
+#- export END_TIME=$( date +%s )
+#- ckeditor5-dev-tests-notify-travis-status
 env:
   global:
   - secure: W6VrPcKacfXYH/P5qjowRpGcq8UHwBpKIub7Tfj7pGaTfQHrUMbPb4jHJLQYd335eiIyVWzmwatYhRJwB5wtaPkfcByCqRqwXQsl3nkmEZYclQdhUgjhCJEPQlu93XNWkaITQnXaJzlJ5etzgyQBKVh+bmaTITCOli5rdLqO7Pge00boTDRevLZ+T6Fw4iNVwSPAwLpbgYfR7pujqPu6kulDrMSOKWcaMImuEGq9Bvps2LieF9KzvoNBCgoleZd+tFFtTvyQ1eE/UeTFQD8GXdKs7fSjj3evuyAm9FWqMBL+zT1EDJoTy4WljLJPwt6JRMazFSp9+j/0KNPuzksLTduGKAxjcc5OzbLxV3Ckh3A//szazAkgrJlK9BNYVLqj9lBns0nL2QbcyR8bY1w8mKVKIXVoCMAxuPWBYbEKKdODDUQXGbz/4wKxx2Ar0boo27v2ewBzo6BmwQYt7X4oTQTfkP7rpUHorKS9ztjHR0FiBAqLN4TQ0nCVqE93ajoGt5o9NO/ZTQbggMptym4JCkJle17K16kNPB96gkQkCIoa20n7/okkNclTl6g9NdD3oeWQMXz4S5Jx8lc3I/9kK5JqZL8KCTFZ//9UNuf6xaSf8g52usl+Kyv+A12u34SJ06n0KvmoA5aQfFHs4rioKL20e7RSI3edZqwp+THGTuk=

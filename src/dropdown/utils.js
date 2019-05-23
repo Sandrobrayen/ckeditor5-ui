@@ -19,8 +19,8 @@ import SwitchButtonView from '../button/switchbuttonview';
 
 import clickOutsideHandler from '../bindings/clickoutsidehandler';
 
-import '../../theme/components/dropdown/toolbardropdown.css';
-import '../../theme/components/dropdown/listdropdown.css';
+import '../../theme/components/dropdown/toolbardropdown.scss';
+import '../../theme/components/dropdown/listdropdown.scss';
 
 /**
  * A helper for creating dropdowns. It creates an instance of a {@link module:ui/dropdown/dropdownview~DropdownView dropdown},

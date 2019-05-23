@@ -14,7 +14,7 @@ import TooltipView from '../tooltip/tooltipview';
 import uid from '@ckeditor/ckeditor5-utils/src/uid';
 import { getEnvKeystrokeText } from '@ckeditor/ckeditor5-utils/src/keyboard';
 
-import '../../theme/components/button/button.css';
+import '../../theme/components/button/button.scss';
 
 /**
  * The button view class.

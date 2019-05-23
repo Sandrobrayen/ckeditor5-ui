@@ -11,7 +11,7 @@ import View from '../view';
 import FocusTracker from '@ckeditor/ckeditor5-utils/src/focustracker';
 import KeystrokeHandler from '@ckeditor/ckeditor5-utils/src/keystrokehandler';
 
-import '../../theme/components/dropdown/dropdown.css';
+import '../../theme/components/dropdown/dropdown.scss';
 
 import { getOptimalPosition } from '@ckeditor/ckeditor5-utils/src/dom/position';
 

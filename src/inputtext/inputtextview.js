@@ -8,7 +8,7 @@
  */
 
 import View from '../view';
-import '../../theme/components/inputtext/inputtext.css';
+import '../../theme/components/inputtext/inputtext.scss';
 
 /**
  * The text input view class.

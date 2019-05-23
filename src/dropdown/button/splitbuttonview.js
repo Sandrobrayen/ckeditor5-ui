@@ -15,7 +15,7 @@ import FocusTracker from '@ckeditor/ckeditor5-utils/src/focustracker';
 
 import dropdownArrowIcon from '../../../theme/icons/dropdown-arrow.svg';
 
-import '../../../theme/components/dropdown/splitbutton.css';
+import '../../../theme/components/dropdown/splitbutton.scss';
 
 /**
  * The split button view class.

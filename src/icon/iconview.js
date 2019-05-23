@@ -11,7 +11,7 @@
 
 import View from '../view';
 
-import '../../theme/components/icon/icon.css';
+import '../../theme/components/icon/icon.scss';
 
 /**
  * The icon view class.

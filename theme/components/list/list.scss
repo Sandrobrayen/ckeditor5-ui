@@ -3,7 +3,7 @@
  * For licensing, see LICENSE.md or https://ckeditor.com/legal/ckeditor-oss-license
  */
 
-@import "../../mixins/_unselectable.css";
+@import "../../mixins/unselectable";
 
 .ck.ck-list {
 	@mixin ck-unselectable;

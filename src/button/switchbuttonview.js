@@ -10,7 +10,7 @@
 import View from '../view';
 import ButtonView from './buttonview';
 
-import '../../theme/components/button/switchbutton.css';
+import '../../theme/components/button/switchbutton.scss';
 
 /**
  * The switch button view class.

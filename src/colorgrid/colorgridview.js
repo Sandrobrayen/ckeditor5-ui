@@ -12,7 +12,7 @@ import ColorTileView from './colortileview';
 import FocusTracker from '@ckeditor/ckeditor5-utils/src/focustracker';
 import FocusCycler from '../focuscycler';
 import KeystrokeHandler from '@ckeditor/ckeditor5-utils/src/keystrokehandler';
-import '../../theme/components/colorgrid/colorgrid.css';
+import '../../theme/components/colorgrid/colorgrid.scss';
 
 /**
  * A grid of {@link module:ui/colorgrid/colortile~ColorTileView color tiles}.
